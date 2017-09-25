@@ -3,37 +3,51 @@
 	<title>About BlueJeans Meetings</title>
 	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css" >
 	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-theme.min.css" >
-	<link rel="stylesheet" type="text/css" href="./bjnstyles.css" >
-	<script type="text/javascript" src="./bjnscripts.js"> </script>
-  
+	<link rel="stylesheet" type="text/css" href="./bjnstyles.css" >  
 </head>
 <body>
-    <h2 class="info"> What is a BlueJeans Meeting?</h2>
-    
-    <div>
-		<img src="./img/bjnmeeting.png" style="padding-left:20px; width:50%">
-	</div>
-    
-    <p>
-    A BlueJeans meeting is a collaboration session of 2 or more participants joining a virtual meeting-room in the cloud.
-	</p>
-	<p>
-    The first person to join is put into a waiting-room until other participant(s) join.  When the meeting starts, all participants will be connected over video & audio.
-	</p>
+	<header>
+	  <div class="container">
+		<div class="desktop-menu">
+		    <a href="index.html"><img class="logo" src="img/bjn-developer-logo.svg" alt="Bluejeans"></a>
+		    <p class="banner-link">Go to &nbsp;<a href="https://github.com/bluejeans" target="_blank" style="color: white;"><span class="strong">BlueJeans on GitHub</span></a>
+		    <span>&nbsp; | &nbsp;</span> <a href="https://www.bluejeans.com" target="_blank" style="color: white;" class="strong">BlueJeans.com</a></p>
+		</div>
+	    <div class="mobile-menu">
+			<a href="index.html"><img class="logo" src="img/bjn-developer-logo.svg" alt="Bluejeans"></a>
+			<a href="#" id="mobile_menu_icon">
+				<img src="img/menu_icon.svg">
+				<div class="mobile-menu-list hidden">
+					<a href="https://www.bluejeans.com" target="_blank">BlueJeans.com</a>
+					<a href="https://github.com/bluejeans" target="_blank">BlueJeans on GitHub</a>
+				</div>
+			</a>			
+		</div>
+	  </div>
+	</header>
+	<section>
+	  	<div class="container">
+		  	<h1 class="page-headline"> What is a BlueJeans Meeting?</h1>
+		  	<div class="diagram">
+		  		<img src="./img/bjnmeeting-diagram.png">
+			</div>
+			<p>A BlueJeans meeting is a collaboration session of 2 or more participants joining a virtual meeting-room in the cloud.</p>
+			<p>The first person to join is put into a waiting-room until other participant(s) join.  When the meeting starts, all participants will be connected over video & audio.</p>
+			<p style="margin-top: 10px; margin-bottom: -5px;" class="strong">There are two types of Meeting Rooms:</p>
+			<ul class="inside-list">
+				<li><span class="strong">Scheduled</span> – A room created for a specific date and time.  It is assigned a randomized and unique numeric ID by BlueJeans.</li>
+				<li><span class="strong">Personal</span> – Every user is given a personal meeting room with a customized Meeting Identifier.  People typically use their mobile phone number as their Meeting ID.</li>
+			</ul>
+			<p>The room may be protected by an access code, and may assigned a moderator passcode allowing designated user(s) greater privileges to help organize meetings.</p>
+		</div>
+	</section>
 	
-	<p>    
-    There are two types of Meeting Rooms
-	<ul>
-	<li>Scheduled – A room created for a specific date and time.  It is assigned a randomized and unique numeric ID by BlueJeans.
-	</li>
-	<li>Personal – Every user is given a personal meeting room with a customized Meeting Identifier.  People typically use their mobile phone number as their Meeting ID.
-	</li>
-	</ul>
-	<?p>
-	
-	<p>    
-    The room may be protected by an access code, and may assigned a moderator passcode allowing designated user(s) greater privileges to help organize meetings.
-	</p>
-    
+	<footer>
+	  	<div class="copyright">
+	    	<p>© <span id="curr_year"></span> Copyright BlueJeans Network. All Rights Reserved.</p>
+		</div>
+	</footer> 
+	<script type="text/javascript" src="./jquery.min.js"></script>
+	<script type="text/javascript" src="./bjnscripts.js"> </script>
 </body>
 </html>

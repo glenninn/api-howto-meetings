@@ -1,17 +1,194 @@
-h2.info {
-  background-color: #12a8f1;
-  width: 100%;
-  height: 1.4em;
-  cursor: pointer;
-  padding: 2px 10px;
-  border-radius: 5px;
+@font-face {
+  font-family: ProximaNova_Light;
+  src: url(font/ProximaNova_Light.otf) format('opentype');
+}
+@font-face {
+  font-family: ProximaNova_Bold;
+  src: url(font/ProximaNova_Bold.otf) format('opentype');
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(font/ProximaNova.otf) format('opentype');
+}
+*, p {
+    margin: 0;
+    padding: 0;
 }
 
+body, 
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: ProximaNova_Light, Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body, p {
+	font-family: ProximaNova_Light, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+    line-height: 1.5;
+    color: #292929;
+}
+header {
+	padding: 40px 0 30px 0;
+    background: #1478C7;         
+    background: -webkit-linear-gradient(90deg, #006FD2, #1AD1E0);    
+    background: -o-linear-gradient(90deg, #006FD2, #1AD1E0);    
+    background: -moz-linear-gradient(90deg, #006FD2, #1AD1E0);
+    background: linear-gradient(90deg, #006FD2, #1AD1E0);
+}
+.logo {
+	padding: 0;
+	margin: 0;
+	height: 26px;
+}
+.banner-link {
+	float: right;
+	font-size: 13px;
+	color: white;
+	line-height: 26px;
+}
+header .banner-text {
+	padding: 30px 0 15px 0;
+}
+header .banner-text p {
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+}
+header .banner-text .banner-head, .bottom-sec .banner-text .banner-head {
+	font-size: 28px;
+	display: block;
+}
+header .banner-text .banner-subhead {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-top: 10px;
+}
+#mobile_menu_icon {
+	float: right;
+	width: 28px;
+	display: block;
+}
+#mobile_menu_icon img {
+	width: 100%;
+	margin-top: 0;
+}
+.mobile-menu-list {
+	width: 100%;
+	text-align: left;
+	background-color: white;
+	position: absolute;
+	left: 0;
+	top: 30px;
+}
+.mobile-menu-list a {
+	display: block;
+	width: 100%;
+	color: #292929;
+	line-height: 24px;
+}
+.hidden {
+	display: none;
+}
+.diagram {
+	margin-bottom: 30px;
+	text-align: center;
+}
+.diagram img {
+	width: 70%;
+	margin: 0 auto;
+}
+ul.inside-list {
+	padding-left: 25px;
+}
+ul.inside-list li {
+    padding-top: 10px;
+}
+ul.inside-list li:last-child {
+    padding-bottom: 10px;
+}
+
+h1.page-headline {
+    font-size: 42px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.strong {
+	font-family: ProximaNova_Bold, Helvetica, Arial, sans-serif;
+}
 .swagger-ui .info .title small pre {
 	color:  black;
 	padding: 1px;
 }
+.separator {
+	height: 15px;
+}
+footer {
+	margin-top: 50px;
+    text-align: center;
+    padding: 0;
+	background: #DDE4EE;
+	border-radius:0;
+	bottom: 0;
+}
+.copyright p {
+	color: #204E74;
+	font-size: 12px;
+	line-height: 50px;
+}
+@media only screen and (max-width : 768px) {
+	#mobile_menu_icon img {
+		height: 20px;
+		margin-bottom: 0;
+	}
+	.desktop-menu, .menu-bar {
+		display: none;
+	}
+	.diagram img {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.mobile-menu-list {
+		width: 100%;
+		z-index: 999;
+		background: white;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #DDE4EE;
+	}
+	.mobile-menu-list a {
+		padding: 20px 30px;
+		text-transform: uppercase;
+		font-size: 14px;
+		font-family: ProximaNova_Bold, Helvetica, Arial, sans-serif;
+	}
+	h1.page-headline {
+		font-size: 28px;
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+}
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+	.mobile-menu {
+		display: none;
+	}
+}
+@media only screen and (min-width: 1024px) {
+	.mobile-menu {
+		display: none;
+	}
+}
 
-body {
-	margin: 10px;
+.mobfixed {
+	position: absolute;
+	left: 0;
+	padding: 30px;
+	background: white;
+	overflow: hidden;
+	height: 100%;
 }
